@@ -7,12 +7,17 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    sliderList: [
+      { selected: true, imageSource: '../../images/1.jpg' },
+      { selected: false, imageSource: '../../images/2.jpg' },
+      { selected: false, imageSource: '../../images/3.jpg' },
+    ]
   },
   //事件处理函数
   bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+    wx.switchTab({
+      url: '../index/index',
     })
   },
   onLoad: function () {

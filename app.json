@@ -1,12 +1,34 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/map/map",
+    "pages/guide/guide"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "热ai一切",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "position": "top",
+    "backgroundColor": "#0000FF",
+    "color": "#DCEDC8",
+    "selectedColor": "#DCEDC8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "周围"
+      },
+      {
+        "pagePath": "pages/guide/guide",
+        "text": "攻略"
+      }
+    ]
   }
 }

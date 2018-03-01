@@ -1,0 +1,4 @@
+<!--pages/map/map.wxml-->
+<view class="map_container">
+<map class="map"></map>
+</view>
